@@ -1,0 +1,334 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9DB3DAC7-FCC9-4AE8-A20F-AC9D03FF7AA3}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DB_Project</RootNamespace>
+    <AssemblyName>DB_Project</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="add-admin.aspx" />
+    <Content Include="add-details.aspx" />
+    <Content Include="AdminloggedIn.aspx" />
+    <Content Include="airbg.jpg" />
+    <Content Include="Airlineinfo.aspx" />
+    <Content Include="airplane.png" />
+    <Content Include="bg.jpg" />
+    <Content Include="BookCinema.aspx" />
+    <Content Include="bookingDisplay.aspx" />
+    <Content Include="Bookingpage.aspx" />
+    <Content Include="Cancelbookings.aspx" />
+    <Content Include="cancelconfirmedaspx.aspx" />
+    <Content Include="cinema.png" />
+    <Content Include="cinemabg.jpg" />
+    <Content Include="Cinemas.aspx" />
+    <Content Include="confirmedbookings.aspx" />
+    <Content Include="createprofile.aspx" />
+    <Content Include="css\bootstrap-grid.css" />
+    <Content Include="css\bootstrap-grid.min.css" />
+    <Content Include="css\bootstrap-reboot.css" />
+    <Content Include="css\bootstrap-reboot.min.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="detailAir.aspx" />
+    <Content Include="detailMovies.aspx" />
+    <Content Include="detailTrain.aspx" />
+    <Content Include="floating-labels.css" />
+    <Content Include="guest-signup.aspx" />
+    <Content Include="host-login.aspx" />
+    <Content Include="index.aspx" />
+    <Content Include="loggedIn.aspx" />
+    <Content Include="login.aspx" />
+    <Content Include="js\bootstrap.bundle.js" />
+    <Content Include="js\bootstrap.bundle.min.js" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="onlineUsers.aspx" />
+    <Content Include="train.png" />
+    <Content Include="trainbg.jpg" />
+    <Content Include="Trainbooking.aspx" />
+    <Content Include="Trains.aspx" />
+    <Content Include="UserBookings.aspx" />
+    <Content Include="viewBookings.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="add-admin.aspx.cs">
+      <DependentUpon>add-admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="add-admin.aspx.designer.cs">
+      <DependentUpon>add-admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="add-details.aspx.cs">
+      <DependentUpon>add-details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="add-details.aspx.designer.cs">
+      <DependentUpon>add-details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminloggedIn.aspx.cs">
+      <DependentUpon>AdminloggedIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminloggedIn.aspx.designer.cs">
+      <DependentUpon>AdminloggedIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Airlineinfo.aspx.cs">
+      <DependentUpon>Airlineinfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Airlineinfo.aspx.designer.cs">
+      <DependentUpon>Airlineinfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BookCinema.aspx.cs">
+      <DependentUpon>BookCinema.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BookCinema.aspx.designer.cs">
+      <DependentUpon>BookCinema.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bookingDisplay.aspx.cs">
+      <DependentUpon>bookingDisplay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bookingDisplay.aspx.designer.cs">
+      <DependentUpon>bookingDisplay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Bookingpage.aspx.cs">
+      <DependentUpon>Bookingpage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bookingpage.aspx.designer.cs">
+      <DependentUpon>Bookingpage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cancelbookings.aspx.cs">
+      <DependentUpon>Cancelbookings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cancelbookings.aspx.designer.cs">
+      <DependentUpon>Cancelbookings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cancelconfirmedaspx.aspx.cs">
+      <DependentUpon>cancelconfirmedaspx.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cancelconfirmedaspx.aspx.designer.cs">
+      <DependentUpon>cancelconfirmedaspx.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cinemas.aspx.cs">
+      <DependentUpon>Cinemas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cinemas.aspx.designer.cs">
+      <DependentUpon>Cinemas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="confirmedbookings.aspx.cs">
+      <DependentUpon>confirmedbookings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="confirmedbookings.aspx.designer.cs">
+      <DependentUpon>confirmedbookings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="createprofile.aspx.cs">
+      <DependentUpon>createprofile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="createprofile.aspx.designer.cs">
+      <DependentUpon>createprofile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\myDAL.cs" />
+    <Compile Include="detailAir.aspx.cs">
+      <DependentUpon>detailAir.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="detailAir.aspx.designer.cs">
+      <DependentUpon>detailAir.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="detailMovies.aspx.cs">
+      <DependentUpon>detailMovies.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="detailMovies.aspx.designer.cs">
+      <DependentUpon>detailMovies.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="detailTrain.aspx.cs">
+      <DependentUpon>detailTrain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="detailTrain.aspx.designer.cs">
+      <DependentUpon>detailTrain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="guest-signup.aspx.cs">
+      <DependentUpon>guest-signup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="guest-signup.aspx.designer.cs">
+      <DependentUpon>guest-signup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="host-login.aspx.cs">
+      <DependentUpon>host-login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="host-login.aspx.designer.cs">
+      <DependentUpon>host-login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="loggedIn.aspx.cs">
+      <DependentUpon>loggedIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="loggedIn.aspx.designer.cs">
+      <DependentUpon>loggedIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="onlineUsers.aspx.cs">
+      <DependentUpon>onlineUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="onlineUsers.aspx.designer.cs">
+      <DependentUpon>onlineUsers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registration.cs" />
+    <Compile Include="Trainbooking.aspx.cs">
+      <DependentUpon>Trainbooking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Trainbooking.aspx.designer.cs">
+      <DependentUpon>Trainbooking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Trains.aspx.cs">
+      <DependentUpon>Trains.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Trains.aspx.designer.cs">
+      <DependentUpon>Trains.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserBookings.aspx.cs">
+      <DependentUpon>UserBookings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserBookings.aspx.designer.cs">
+      <DependentUpon>UserBookings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="viewBookings.aspx.cs">
+      <DependentUpon>viewBookings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="viewBookings.aspx.designer.cs">
+      <DependentUpon>viewBookings.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\bootstrap-grid.css.map" />
+    <Content Include="css\bootstrap-grid.min.css.map" />
+    <Content Include="css\bootstrap-reboot.css.map" />
+    <Content Include="css\bootstrap-reboot.min.css.map" />
+    <Content Include="css\bootstrap.css.map" />
+    <Content Include="css\bootstrap.min.css.map" />
+    <Content Include="js\bootstrap.bundle.js.map" />
+    <Content Include="js\bootstrap.bundle.min.js.map" />
+    <Content Include="js\bootstrap.js.map" />
+    <Content Include="js\bootstrap.min.js.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>65033</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:65033/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
